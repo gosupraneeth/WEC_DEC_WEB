@@ -1,0 +1,340 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	overflow-y: hidden;
+  overflow-x: hidden;
+   background-image: url('./../PHOTOS/ORANGE_BG.PNG');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+/*body{
+	background-image: url('./../PHOTOS/snowfall3.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}*/
+header nav a{
+	display:inline-block;
+	margin: 2%;
+	padding: 10px 30px;
+	text-decoration: none;
+	box-sizing: border-box;
+	background-color: #FFFDD0;
+	opacity: 0.5;
+	color: #808080;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+header nav a:hover{
+	box-shadow: 0 8px 17px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+header nav a.active{
+	background-color: black;
+	opacity: 0.5;
+	color: white;
+}
+nav{
+	display: inline-block;
+	box-sizing: auto;
+	float: left;
+	width: 50%;
+}
+header {
+	background-color: white;
+	background-image: url('SKY.jpg');
+	height: auto;
+	overflow: hidden;
+	background-size: cover;
+	width: 100%;
+	z-index: 99;
+	transition: 0.4s;
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	box-shadow: 0 8px 17px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+header div{
+	display: inline-block;
+	width: 40%;
+	float: center;
+}
+header div a img{
+	width :85px;
+	float: right;
+	margin: 1%;
+	transition: 0.4s;
+	height: 85px;
+	box-shadow: 0 8px 17px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+{box-sizing:border-box}
+.mySlides {
+	display: block;
+	overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+	box-shadow: 0 8px 17px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.tab1{
+	width: 100%;
+	padding-top: 200px;
+    margin-top: 1%;
+  /*  background-image: url('./../PHOTOS/ORANGE_BG.PNG');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;*/
+}
+.tab1 h1{
+	text-align: center;
+	position: relative;
+	font-size: 100px;
+
+}
+.tab2 {
+	width: 100%;
+	padding :auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    text-align: center;
+    background-color: orange;
+    box-shadow: 0 8px 17px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.tab2 h2{
+	text-align: center;
+	position: relative;
+	font-size: 50px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  opacity: 0.5;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.bigone{
+    background-color: rgb(44, 76, 102);
+    border:1px solid rgb(44, 76, 102);
+    margin: 10px 0px 0px 0px;
+    margin-bottom: 0px;
+    width: 1100px;
+    margin:20px 120px 0 120px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.smallone{
+    background-color: olivedrab;
+    border:1px solid olivedrab;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    width: 1100px;
+    margin:0 120px 0 120px;
+    text-shadow: 1px 1px 2px #000000;
+    box-shadow: 10px 10px 5px grey;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+#logo:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+#background{
+	background-image: url('./../PHOTOS/CODE_BINARY.PNG');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+  max-width: 100%; /* Maximum width */
+  margin: 0 auto; /* Center it */
+  margin-top: 2%;
+}
+.tansparent{
+	position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px;
+	
+}
+footer{
+	background-image: url('./../PHOTOS/FOOTER_BG1.PNG');
+	background-size: cover;
+	background-repeat: no-repeat;
+	bottom: 0px;
+	/*background-attachment: fixed;*/
+	margin-top: 3%;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .flip-card {
+  display: inline-block;
+  background-color: transparent;
+  width: 300px;
+  height: 250px;
+  border-radius: 50px 20px;
+  padding: 5px;
+  margin-right: 6%;
+  margin-left: 6%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 50px 20px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  border-radius: 50px 20px;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px 20px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #ffffff;
+  border-radius: 50px 20px;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  border-radius: 50px 20px;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transform: rotateY(180deg);
+}
+.about {
+	width: 75%;
+	padding :auto;
+    margin-top: 2%;
+    margin-bottom: 0.5%;
+    margin-left: auto;
+  	margin-right: auto;
+    text-align: left;
+    background-color: black;
+    opacity: 0.2;
+    color: white;
+    box-shadow: 0 8px 17px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#tab3 {
+	width: 75%;
+	 margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 8px 17px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	background-color: red;
+	text-align: center;
+}
+#tab3 a{
+	display:inline-block;
+	margin: 2%;
+	padding: 10px 30px;
+	text-decoration: none;
+	box-sizing: border-box;
+	background-color: #000080;
+	opacity: 0.5;
+	color: #FFFDD0;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.card {
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 200px;
+  overflow: hidden;
+  margin: 3%;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+#myBtn2 {
+  border: none;
+  outline: 0;
+  bottom: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+#myBtn2:hover, .card a:hover {
+  opacity: 0.7;
+}
