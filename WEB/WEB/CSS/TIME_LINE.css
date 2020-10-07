@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: Helvetica, sans-serif;
+  opacity: var(--db-title-opacity);
   margin-bottom: 20%;
 }
 
@@ -96,6 +97,9 @@
   background-color: white;
   position: relative;
   border-radius: 6px;
+}
+.content h2{
+  font-family: 'Creepster';
 }
 .content:hover{
  box-shadow: 0 8px 17px 0 rgba(0, 0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
